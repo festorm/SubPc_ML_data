@@ -1,5 +1,3 @@
-#!/groups/kemi/freja/anaconda3/envs/my-rdkit-env/bin/python
-
 import pandas as pd
 import numpy as np
 
