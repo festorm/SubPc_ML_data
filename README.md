@@ -1,4 +1,4 @@
-# SubPc_ML_data
+# SubPc database
 The DFT database includes name, HOMO energies (HOMO), first TD-DFT excitation energies (E_opt), SMILES strings and one of the three utilized feature vectors (Coulomb, E-state and OneHot).
 
 Data for structures with no TTF ligands are found in
