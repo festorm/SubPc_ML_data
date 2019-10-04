@@ -11,4 +11,4 @@ Script for optimizing the hyperparameters with training/validition is given in N
 Script for final training and testing the NN is given in NN_SubPc_HOMO_estate.py with the E-state feature vectors used as example. The E-state dataset has been split beforehand with seed 42. The corresponding data is given in: df_train_seed42.pkl, y_train_seed42.pkl, df_test_seed42.pkl and y_test_seed42.pkl.
 
 # Linear Regression
-The script for linear regression is LinearReg.ipynb.
+The script for linear regression (LR) is LinearReg.ipynb. The final LR models are found in LRmodel_HOMO_XXX.sav and LRmodel_LUMO_XXX.sav for HOMO and LUMO energies, respectively, and with XXX = {coulomb, estate or onehot}.
