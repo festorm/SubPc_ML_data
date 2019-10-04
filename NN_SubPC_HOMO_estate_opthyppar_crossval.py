@@ -43,6 +43,7 @@ y1, y2, y3, y4, y5 = np.array_split(y_train, 5)
 
 learning_rate = 0.01
 epochs = 3000
+wd = 0.001 #weight-decay parameter
 for neurons in [10]:
     SEED=42
     torch.manual_seed(SEED) #seed for random initialization of weights
@@ -82,7 +83,7 @@ for neurons in [10]:
         model = NN
     
         criterion = nn.MSELoss() # Mean Squared Loss
-        optimizer = torch.optim.AdamW(model.parameters(), lr=learning_rate, weight_decay=0.001) #parameter optimizer model, Stochastic Gradient Descent  
+        optimizer = torch.optim.AdamW(model.parameters(), lr=learning_rate, weight_decay=wd) #parameter optimizer model, Stochastic Gradient Descent  
         for epoch in range(max_epoch):  #loop over the training dataset multiple times
         
             yt_pred = model(Xt_tensor)
